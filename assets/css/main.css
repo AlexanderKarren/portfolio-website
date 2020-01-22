@@ -20,10 +20,11 @@ footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: solid gray 1px; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	max-width:100%;
 }
 
 article, aside, details, figcaption, figure,
@@ -1325,6 +1326,16 @@ input, select, textarea {
 				overflow: hidden;
 			}
 
+				#header .content .inner > :first-child {
+					width:100%;
+				}
+
+					#header .content .inner > :first-child > img {
+						width:10%;
+						border-radius:50%;
+						box-shadow: 1px 1px 1px black;
+					}
+
 				#header .content .inner > :last-child {
 					margin-bottom: 0;
 				}
@@ -1551,6 +1562,14 @@ input, select, textarea {
 			border-radius: 4px;
 			opacity: 0;
 		}
+
+			#main article#photos > span {
+				margin-bottom:0;
+			}
+
+			#main article#photos > p {
+				margin-bottom:8%;
+			}
 
 			#main article.active {
 				-moz-transform: translateY(0);
